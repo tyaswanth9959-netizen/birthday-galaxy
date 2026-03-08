@@ -1,5 +1,5 @@
-document.body.addEventListener("click", function () {
-    document.getElementById("bgMusic").play();
+window.onload = function(){
+    document.getElementByid("bgMusic").play()
 });
 
 function showCalendar(){
@@ -58,17 +58,17 @@ document.getElementById("seconds").innerText = seconds
 
 
 
-const photos = [
-"photos/photo1.jpeg",
-"photos/photo2.jpeg",
-"photos/photo3.jpeg",
-"photos/photo4.jpeg",
-"photos/photo5.jpeg",
-"photos/photo6.jpeg",
-"photos/photo7.jpeg",
-"photos/photo8.jpeg",
-"photos/photo9.jpeg",
-"photos/photo10.jpeg",
+let photos = [
+"photo1.jpeg",
+"photo2.jpeg",
+"photo3.jpeg",
+"photo4.jpeg",
+"photo5.jpeg",
+"photo6.jpeg",
+"photo7.jpeg",
+"photo8.jpeg",
+"photo9.jpeg",
+"photo10.jpeg",
 ]
 
 const quotes = [
@@ -179,4 +179,5 @@ window.addEventListener("resize",()=>{
     canvas.width = window.innerWidth
     canvas.height = window.innerHeight
 })
+
 
