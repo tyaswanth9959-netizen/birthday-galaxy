@@ -205,6 +205,12 @@ from{width:0}
 to{width:100%}
 }
 
+@keyframes blink{
+0%{border-color:#00ffff;}
+50%{border-color:transparent;}
+100%{border-color:#00ffff;}
+}
+
 
 
 
