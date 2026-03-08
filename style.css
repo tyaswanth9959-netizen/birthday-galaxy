@@ -210,22 +210,8 @@ to{width:100%}
 50%{border-color:transparent}
 100%{border-color:#00ffff}
 }
-#final p{
-font-size:22px;
-color:#FFD700;
-text-shadow:
-0 0 8px #FFD700,
-0 0 15px #FFD700,
-0 0 25px #ff69b4;
-font-weight:500;
-}
-#final h1{
-color:#ffb6c1;
-text-shadow:
-0 0 10px #ff69b4,
-0 0 20px #ff69b4,
-0 0 35px #ff69b4;
-}
+
+
 
 
 
