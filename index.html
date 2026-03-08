@@ -7,47 +7,27 @@
 </head>
 
 <body>
-<audio id="bgMusic" autoplay loop>
+
+<!-- AUDIO -->
+<audio id="bgMusic" autoplay muted loop>
 <source src="music/music2.mpeg" type="audio/mpeg">
 </audio>
+
 <canvas id="stars"></canvas>
 
 <!-- SECTION 1 -->
 <section id="welcome" class="page active">
+
 <h1>✨ Happy Birthday Mamatha ✨</h1>
-<!-- <p> Today the universe celebrates the day a beautiful star was born 🌌</p>------>
+
 <div class="birthdayMessage">
-    <p class="line">Mamatha,the sky is full of stars and the galaxy has millions more...</p>
-    <p class="line">but the most special star I know came down to Earth.</p>
-    <p class="line">That star is you.</p>
-    <p class="line">Happy Birthday.</p>
+<p class="line">Mamatha,the sky is full of stars and the galaxy has millions more...</p>
+<p class="line">but the most special star I know came down to Earth.</p>
+<p class="line">That star is you.</p>
+<p class="line">Happy Birthday.</p>
 </div>
-<!--------- <p id="quote"></p> -------------->
+
 <button onclick="showCalendar()">Open Journey</button>
-</section>
-<!--------------------   <script>
-    let text = "Mamatha,the sky is full of stars and the galaxy has millions more...\n\nbut the most special star I know come down to Earth.\n\nThat star is you.\n\nHappy Birthday.💫";
-
-let i = 0;
-
-function typeWriter(){
-
-if(i < text.length){
-
-document.getElementById("quote").innerHTML += text.charAt(i)==="\n"?"<br><br>": text.charAt(i);
-
-i++;
-
-setTimeout(typeWriter,50);
-
-}
-
-}
-
-typeWriter();
-</script>
-
--                ----------------------------------->
 
 </section>
 
@@ -117,7 +97,7 @@ typeWriter();
 
 <div class="letter" onclick="openEnvelope()">
 
-<img id="letterImg" src="letter.jpeg">
+<img id="letterImg" src="photos/letter.jpeg">
 
 <div class="letterText">
 Happy Birthday ❤️<br><br>
@@ -135,15 +115,14 @@ Forever special 💖
 <section id="final" class="page">
 
 <h1>💖 Thank You 💖</h1>
-<p class="finalQuote"> ✨ Share these memories with the people...who truly matter in your life.💖</p>
 
+<p class="finalQuote">
+✨ Share these memories with the people...who truly matter in your life.💖
+</p>
 
 </section>
 
 <script src="script.js"></script>
 
 </body>
-
 </html>
-
-
