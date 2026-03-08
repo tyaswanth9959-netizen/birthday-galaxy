@@ -159,28 +159,21 @@ color:white;
 opacity:0;
 color:#00ffff;
 text-shadow:0 0 10px #00ffff,0 0 20px #ff69b4,0 0 30px #FFD700;
-animation:fadeIn 6s forwards;
+animation:fadeIn 3s forwards;
 }
-
-/* ONE BY ONE REVEAL */
 
 .line:nth-child(1){animation-delay:1s;}
 .line:nth-child(2){animation-delay:4s;}
 .line:nth-child(3){animation-delay:7s;}
 .line:nth-child(4){animation-delay:10s;}
 
-/* FADE ANIMATION */
-
 @keyframes fadeIn{
-
 from{
 opacity:0;
-transform:translateY(25px);
+transform:translateY(20px);
 }
-
 to{
 opacity:1;
 transform:translateY(0);
 }
-
 }
