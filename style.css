@@ -1,0 +1,186 @@
+body{
+margin:0;
+font-family:Arial;
+background:black;
+color:white;
+text-align:center;
+overflow:hidden;
+}
+h1{
+    font-size: 40px;
+    color: #ff69b4;
+    font-family: 'Courier New',cursive;
+    text-shadow: 0 0 10px pink,0 0 20px rgb(151, 86, 119);
+}
+
+canvas{
+position:fixed;
+top:0;
+left:0;
+z-index:-1;
+}
+
+.page{
+display:none;
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+width:90%;
+max-width:400px;
+}
+
+.page.active{
+display:block;
+animation:fade 1s;
+}
+
+@keyframes fade{
+from{opacity:0; transform:translate(-50%,-60%)}
+to{opacity:1; transform:translate(-50%,-50%)}
+}
+
+button{
+padding:10px 18px;
+border:none;
+border-radius:25px;
+background:linear-gradient(45deg,pink,hotpink);
+color:white;
+font-size:14px;
+margin-top:20px;
+cursor:pointer;
+}
+
+.grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:12px;
+margin-top:25px;
+}
+
+.box{
+background:#111;
+padding:12px;
+border-radius:15px;
+box-shadow:0 0 10px hotpink;
+}
+
+.box h1{
+font-size:20px;
+margin:0;
+}
+
+#photo{
+width:240px;
+border-radius:15px;
+box-shadow:0 0 25px pink;
+animation:zoom 4s infinite alternate;
+}
+#photoQuote{
+    font-size: 18px;
+    margin-top: 15px;
+    color: pink;
+    font-style: italic;
+}
+
+#photoQuote{
+    font-size: 18px;
+    color: #00ffff;
+    font-style: italic;
+    margin-top: 15px;
+}
+    /*   photo   */
+    #photoQuote{
+    opacity:0;
+animation:fadeIn 2s forwards;
+color: #00ffff;
+text-shadow: 0 0 10px #00ffff,0 0 20px #ff69b4,0 0 30px #FFD700;
+}
+
+button{
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+@keyframes zoom{
+from{transform:scale(1)}
+to{transform:scale(1.1)}
+}
+
+#quote{
+margin-top:10px;
+font-style:italic;
+}
+/* upgrade code */
+#quote{
+    font-size: 20px;
+    color: white;
+    margin: 20px;
+}
+
+#finishBtn{
+display:none;
+}
+
+.letter{
+width: 100%;
+max-width: 500px;
+margin:auto;
+cursor:pointer;
+background:transparent;
+}
+
+#letterImg{
+width:100%;
+display: block;
+border: none;
+background:transparent ;
+}
+
+.letterText{
+display:none;
+color:black;
+margin-top:10px;
+}
+.finalQuote{
+    font-size: 20px;
+    margin-top: 15px;
+    color: #FFD700;
+    font-weight: 500;
+    text-shadow: 0 0 8px #FFD700,0 0 15px #ff69b4;
+}
+
+/* This is a first page animation code */
+
+.birthdayMessage{
+margin-top:40px;
+text-align:center;
+font-size:26px;
+color:white;
+}
+
+.line{
+opacity:0;
+animation:fadeIn 2s forwards;
+color: #00ffff;
+text-shadow: 0 0 10px #00ffff,0 0 20px #ff69b4,0 0 30px #FFD700;
+}
+
+.line:nth-child(1){animation-delay:1s;}
+.line:nth-child(2){animation-delay:4s;}
+.line:nth-child(3){animation-delay:7s;}
+.line:nth-child(4){animation-delay:10s;}
+
+@keyframes fadeIn{
+
+from{
+opacity:0;
+transform:translateY(20px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}

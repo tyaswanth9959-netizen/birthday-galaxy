@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Birthday Galaxy</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<audio id="bgMusic" autoplay loop>
+    <source src="music/music2.mpeg" type="audio/mpeg">
+</audio>
+
+<canvas id="stars"></canvas>
+
+<!-- SECTION 1 -->
+<section id="welcome" class="page active">
+<h1>✨ Happy Birthday Mamatha ✨</h1>
+<!-- <p> Today the universe celebrates the day a beautiful star was born 🌌</p>------>
+<div class="birthdayMessage">
+    <p class="line">Mamatha,the sky is full of stars and the galaxy has millions more...</p>
+    <p class="line">but the most special star I know came down to Earth.</p>
+    <p class="line">That star is you.</p>
+    <p class="line">Happy Birthday.</p>
+</div>
+<!--------- <p id="quote"></p> -------------->
+<button onclick="showCalendar()">Open Journey</button>
+</section>
+<!--------------------   <script>
+    let text = "Mamatha,the sky is full of stars and the galaxy has millions more...\n\nbut the most special star I know come down to Earth.\n\nThat star is you.\n\nHappy Birthday.💫";
+
+let i = 0;
+
+function typeWriter(){
+
+if(i < text.length){
+
+document.getElementById("quote").innerHTML += text.charAt(i)==="\n"?"<br><br>": text.charAt(i);
+
+i++;
+
+setTimeout(typeWriter,50);
+
+}
+
+}
+
+typeWriter();
+</script>
+
+-                ----------------------------------->
+
+</section>
+
+<!-- SECTION 2 -->
+<section id="calendar" class="page">
+
+<h2>💖 Mamatha's Life Journey 💖</h2>
+<h3>Since 27/04/2007</h3>
+
+<div class="grid">
+
+<div class="box">
+<h1 id="years">0</h1>
+<p>Years</p>
+</div>
+
+<div class="box">
+<h1 id="months">0</h1>
+<p>Months</p>
+</div>
+
+<div class="box">
+<h1 id="weeks">0</h1>
+<p>Weeks</p>
+</div>
+
+<div class="box">
+<h1 id="days">0</h1>
+<p>Days</p>
+</div>
+
+<div class="box">
+<h1 id="hours">0</h1>
+<p>Hours</p>
+</div>
+
+<div class="box">
+<h1 id="minutes">0</h1>
+<p>Minutes</p>
+</div>
+
+<div class="box">
+<h1 id="seconds">0</h1>
+<p>Seconds</p>
+</div>
+
+</div>
+
+<button onclick="showPhotos()">Memories ➜</button>
+
+</section>
+
+<!-- SECTION 3 -->
+<section id="photos" class="page">
+
+<h2>Beautiful Memories 💖</h2>
+
+<div id="photoBox">
+<img id="photo" src="photos/photo1.jpeg">
+<p id="photoQuote"></p>
+</div>
+
+<button id="nextBtn" onclick="nextPhoto()">Next</button>
+<button id="finishBtn" onclick="openLetter()">Final Surprise</button>
+
+</section>
+
+<!-- SECTION 4 -->
+<section id="letterPage" class="page">
+
+<div class="letter" onclick="openEnvelope()">
+
+<img id="letterImg" src="photos/letter.jpeg">
+
+<div class="letterText">
+Happy Birthday ❤️<br><br>
+You are the brightest star in my universe ✨<br><br>
+Forever special 💖
+</div>
+
+</div>
+
+<button onclick="finalMessage()">Final Message</button>
+
+</section>
+
+<!-- FINAL -->
+<section id="final" class="page">
+
+<h1>💖 Thank You 💖</h1>
+<p class="finalQuote"> ✨ Share these memories with the people...who truly matter in your life.💖</p>
+
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
