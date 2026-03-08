@@ -167,7 +167,20 @@ animation:fadeIn 3s forwards;
 .line:nth-child(3){animation-delay:7s;}
 .line:nth-child(4){animation-delay:10s;}
 
-@keyframes fadeIn{
+.birthdayMessage{
+margin-top:40px;
+text-align:center;
+font-size:26px;
+color:white;
+}
+
+.line{
+opacity:0;
+animation:fadeIn 2s forwards;
+color:#00ffff;
+text-shadow:0 0 10px #00ffff,0 0 20px #ff69b4;
+}
+/*@keyframes fadeIn{
 from{
 opacity:0;
 transform:translateY(20px);
@@ -177,3 +190,4 @@ opacity:1;
 transform:translateY(0);
 }
 }
+*/
