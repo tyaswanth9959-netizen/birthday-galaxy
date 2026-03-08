@@ -1,6 +1,6 @@
 window.onload = function(){
-    document.getElementByid("bgMusic").play()
-});
+    document.getElementById("bgMusic").play()
+}
 
 
 function showCalendar(){
@@ -69,26 +69,26 @@ let photos = [
 "photo7.jpeg",
 "photo8.jpeg",
 "photo9.jpeg",
-"photo10.jpeg",
+"photo10.jpeg"
 ]
 
 const quotes = [
-" Life becomes beautiful with genuine smiles.💖",
+"Life becomes beautiful with genuine smiles.💖",
 "Born to shine...and sometimes confuse people ✨",
 "Every picture holds a story.🌸",
 "This picture contains 90% Happiness and 10% mystery.🌙",
 "Life feels beautiful when moments shine like Deepavali lights.❤️",
-" Life becomes easier and happier with true friends around.💖",
-" If happiness had a selfie,it would look like this .💖",
-" Just a photo...but the attitude is full HD.✨",
-" This face may Looks innocent....but the hidden story is more intersting than you think.✨",
-" 💖 The gallery may end here...but the memories continue forever...But the story is still being written.....💖.....💖"
+"Life becomes easier and happier with true friends around.💖",
+"If happiness had a selfie,it would look like this .💖",
+"Just a photo...but the attitude is full HD.✨",
+"This face may looks innocent....but the hidden story is more interesting than you think.✨",
+"💖 The gallery may end here...but the memories continue forever...💖"
 ]
 
 let index=0
 
 function startPhotos(){
-    index = 0
+index = 0
 
 document.getElementById("photo").src=photos[0]
 document.getElementById("photoQuote").innerText=quotes[0]
@@ -177,10 +177,7 @@ animate()
 
 window.addEventListener("resize",()=>{
 
-    canvas.width = window.innerWidth
-    canvas.height = window.innerHeight
+canvas.width = window.innerWidth
+canvas.height = window.innerHeight
+
 })
-
-
-
-
