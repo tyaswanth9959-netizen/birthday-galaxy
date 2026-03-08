@@ -8,8 +8,9 @@
 
 <body>
 <audio id="bgMusic" autoplay loop>
-<source src="music/music2.mpeg" type="audio/mpeg">
+    <source src="music/music2.mpeg" type="audio/mpeg">
 </audio>
+
 <canvas id="stars"></canvas>
 
 <!-- SECTION 1 -->
@@ -105,7 +106,10 @@ typeWriter();
 
 <h2>Beautiful Memories 💖</h2>
 
+<div id="photoBox">
 <img id="photo" src="photos/photo1.jpeg">
+<p id="photoQuote"></p>
+</div>
 
 <button id="nextBtn" onclick="nextPhoto()">Next</button>
 <button id="finishBtn" onclick="openLetter()">Final Surprise</button>
@@ -117,7 +121,7 @@ typeWriter();
 
 <div class="letter" onclick="openEnvelope()">
 
-<img id="letterImg" src="letter.jpeg">
+<img id="letterImg" src="photos/letter.jpeg">
 
 <div class="letterText">
 Happy Birthday ❤️<br><br>
@@ -143,5 +147,4 @@ Forever special 💖
 <script src="script.js"></script>
 
 </body>
-
 </html>
