@@ -157,7 +157,7 @@ color:white;
 
 .line{
 opacity:0;
-animation:fadeIn 3.5s forwards;
+animation:fadeIn 6s forwards;
 color:#00ffff;
 text-shadow:0 0 10px #00ffff,0 0 20px #ff69b4,0 0 30px #FFD700;
 }
@@ -184,3 +184,4 @@ transform:translateY(0);
 }
 
 }
+
