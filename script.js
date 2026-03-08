@@ -2,6 +2,13 @@ document.body.addEventListener("click", function () {
     document.getElementById("bgMusic").play();
 });
 
+document.addEventListener("click", function(){
+let music = document.getElementById("bgMusic");
+if(music){
+music.play();
+}
+});
+
 function showCalendar(){
 switchPage("calendar")
 }
@@ -179,4 +186,5 @@ window.addEventListener("resize",()=>{
     canvas.width = window.innerWidth
     canvas.height = window.innerHeight
 })
+
 
