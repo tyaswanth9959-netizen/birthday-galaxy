@@ -1,10 +1,11 @@
-function showCalendar(){
-switchPage("calendar")
-}
-
 window.onload = function(){
     document.getElementByid("bgMusic").play()
 });
+
+
+function showCalendar(){
+switchPage("calendar")
+}
 
 function showPhotos(){
 switchPage("photos")
@@ -31,7 +32,7 @@ document.getElementById(id).classList.add("active")
 
 
 
-const birth = new Date("2007-04-27")
+let birth = new Date("2007-04-27")
 
 setInterval(()=>{
 
@@ -179,6 +180,7 @@ window.addEventListener("resize",()=>{
     canvas.width = window.innerWidth
     canvas.height = window.innerHeight
 })
+
 
 
 
