@@ -25,7 +25,7 @@ left:0;
 z-index:-1;
 }
 
-/* PAGE STYLE */
+/* PAGE */
 
 .page{
 display:none;
@@ -153,16 +153,16 @@ font-size:26px;
 color:white;
 }
 
-/* SLOW MOTION TEXT REVEAL */
+/* TEXT GLOW + SLOW REVEAL */
 
 .line{
 opacity:0;
-animation:fadeIn 6s forwards;
 color:#00ffff;
 text-shadow:0 0 10px #00ffff,0 0 20px #ff69b4,0 0 30px #FFD700;
+animation:fadeIn 6s forwards;
 }
 
-/* ONE BY ONE DELAY */
+/* ONE BY ONE REVEAL */
 
 .line:nth-child(1){animation-delay:1s;}
 .line:nth-child(2){animation-delay:4s;}
@@ -184,4 +184,3 @@ transform:translateY(0);
 }
 
 }
-
