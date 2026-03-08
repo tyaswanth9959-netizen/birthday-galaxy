@@ -2,11 +2,29 @@ document.body.addEventListener("click", function () {
     document.getElementById("bgMusic").play();
 });
 
-document.addEventListener("click", function(){
+/* document.addEventListener("click", function(){
 let music = document.getElementById("bgMusic");
 if(music){
 music.play();
 }
+});
+*/
+document.addEventListener("DOMContentLoaded", function(){
+
+let music = document.getElementById("bgMusic");
+
+music.muted = true;
+
+let playPromise = music.play();
+
+if(playPromise !== undefined){
+playPromise.then(()=>{
+setTimeout(function(){
+music.muted = false;
+},1000);
+});
+}
+
 });
 
 function showCalendar(){
@@ -186,5 +204,6 @@ window.addEventListener("resize",()=>{
     canvas.width = window.innerWidth
     canvas.height = window.innerHeight
 })
+
 
 
