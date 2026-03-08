@@ -156,35 +156,33 @@ color:white;
 /* TEXT GLOW + SLOW REVEAL */
 
 .line{
-opacity:0;
+overflow:hidden;
+white-space:nowrap;
+border-right:3px solid #00ffff;
+width:0;
+opacity:1;
+animation:typing 4s steps(40,end) forwards, blink 1s infinite;
 color:#00ffff;
 text-shadow:0 0 10px #00ffff,0 0 20px #ff69b4,0 0 30px #FFD700;
-animation:fadeIn 3s forwards;
 }
 
 .line:nth-child(1){animation-delay:1s;}
-.line:nth-child(2){animation-delay:4s;}
-.line:nth-child(3){animation-delay:7s;}
-.line:nth-child(4){animation-delay:10s;}
+.line:nth-child(2){animation-delay:5s;}
+.line:nth-child(3){animation-delay:9s;}
+.line:nth-child(4){animation-delay:13s;}
 
-.birthdayMessage{
-margin-top:40px;
-text-align:center;
-font-size:26px;
-color:white;
+@keyframes typing{
+from{width:0}
+to{width:100%}
 }
 
+@keyframes blink{
+0%{border-color:#00ffff}
+50%{border-color:transparent}
+100%{border-color:#00ffff}
+}
 
-@keyframes fadeIn{
-from{
-opacity:0;
-transform:translateY(20px);
-}
-to{
-opacity:1;
-transform:translateY(0);
-}
-}
+
 
 
 
