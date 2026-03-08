@@ -1,10 +1,10 @@
-window.onload = function(){
-    document.getElementByid("bgMusic").play()
-});
-
 function showCalendar(){
 switchPage("calendar")
 }
+
+window.onload = function(){
+    document.getElementByid("bgMusic").play()
+});
 
 function showPhotos(){
 switchPage("photos")
@@ -179,5 +179,6 @@ window.addEventListener("resize",()=>{
     canvas.width = window.innerWidth
     canvas.height = window.innerHeight
 })
+
 
 
