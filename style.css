@@ -17,7 +17,7 @@ flex-direction:column;
 /* TITLE */
 
 h1{
-font-size:40px;
+font-size:40%;
 color:#ff69b4;
 font-family:'Courier New',cursive;
 text-shadow:0 0 10px pink,0 0 20px rgb(151,86,119);
@@ -240,6 +240,7 @@ padding:12px 24px;
 }
 
 }
+
 
 
 
