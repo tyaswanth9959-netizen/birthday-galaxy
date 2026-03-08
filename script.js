@@ -1,6 +1,6 @@
-window.onload = function(){
-    document.getElementById("bgMusic").play()
-}
+document.body.addEventListener("click", function () {
+document.getElementById("bgMusic").play();
+});
 
 
 function showCalendar(){
@@ -60,6 +60,7 @@ document.getElementById("seconds").innerText = seconds
 
 
 let photos = [
+
 "photo1.jpeg",
 "photo2.jpeg",
 "photo3.jpeg",
@@ -70,31 +71,35 @@ let photos = [
 "photo8.jpeg",
 "photo9.jpeg",
 "photo10.jpeg"
+
 ]
 
 const quotes = [
+
 "Life becomes beautiful with genuine smiles.💖",
-"Born to shine...and sometimes confuse people ✨",
-"Every picture holds a story.🌸",
-"This picture contains 90% Happiness and 10% mystery.🌙",
-"Life feels beautiful when moments shine like Deepavali lights.❤️",
-"Life becomes easier and happier with true friends around.💖",
-"If happiness had a selfie,it would look like this .💖",
-"Just a photo...but the attitude is full HD.✨",
-"This face may looks innocent....but the hidden story is more interesting than you think.✨",
-"💖 The gallery may end here...but the memories continue forever...💖"
+"Born to shine...✨",
+"Every picture holds a story 🌸",
+"Moments become memories ❤️",
+"Smile is the best filter 💖",
+"Friends make life beautiful 💕",
+"Happiness captured 📸",
+"Attitude level HD 😎",
+"Innocent face mysterious story ✨",
+"Memories continue forever 💖"
+
 ]
 
 let index=0
 
 function startPhotos(){
-index = 0
+
+index=0
 
 document.getElementById("photo").src=photos[0]
 document.getElementById("photoQuote").innerText=quotes[0]
 
-document.getElementById("nextBtn").style.display ="inline-block"
-document.getElementById("finishBtn").style.display = "none"
+document.getElementById("nextBtn").style.display="inline-block"
+document.getElementById("finishBtn").style.display="none"
 
 }
 
@@ -126,7 +131,7 @@ document.querySelector(".letterText").style.display="block"
 
 
 
-/* LIVE GALAXY */
+/* galaxy animation */
 
 const canvas=document.getElementById("stars")
 const ctx=canvas.getContext("2d")
@@ -136,7 +141,7 @@ canvas.height=window.innerHeight
 
 let stars=[]
 
-for(let i=0;i<400;i++){
+for(let i=0;i<300;i++){
 
 stars.push({
 
@@ -174,10 +179,3 @@ requestAnimationFrame(animate)
 }
 
 animate()
-
-window.addEventListener("resize",()=>{
-
-canvas.width = window.innerWidth
-canvas.height = window.innerHeight
-
-})
