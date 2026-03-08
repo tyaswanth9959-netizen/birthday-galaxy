@@ -63,25 +63,19 @@ cursor:pointer;
 }
 
 .journeyTitle{
-font-size:40px;
+font-size:30px;
 color:white;
 text-align:center;
-text-shadow:0 0 10px #ff69b4, 
-             0 0 20px #ff69b4, 
-             0 0 30px #ff1493;
+text-shadow:0 0 10px #ff69b4, 0 0 20px #ff69b4, 0 0 30px #ff1493;
 animation:glow 2s infinite alternate;
 }
 
 @keyframes glow{
 from{
-text-shadow:0 0 10px #ff69b4,
-            0 0 20px #ff69b4,
-            0 0 30px #ff1493;
+text-shadow:0 0 10px #ff69b4,0 0 20px #ff69b4,0 0 30px #ff1493;
 }
 to{
-text-shadow:0 0 20px #ff69b4,
-            0 0 30px #ff1493,
-            0 0 40px #ff69b4;
+text-shadow:0 0 20px #ff69b4,0 0 30px #ff1493,0 0 40px #ff69b4;
 }
 }
 
@@ -222,6 +216,7 @@ color:#FFD700;
 text-shadow:0 0 8px #FFD700,0 0 15px #FFD700,0 0 25px #ff69b4;
 font-weight:500;
 }
+
 
 
 
