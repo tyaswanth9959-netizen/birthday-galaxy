@@ -77,16 +77,15 @@ let photos = [
 const quotes = [
 
 " Life becomes beautiful with genuine smiles.💖",
-"Born to shine and sometimes confuse people ✨",
+"Born to shine...and sometimes confuse people ✨",
 "Every picture holds a story.🌸",
 "This picture contains 90% Happiness and 10% mystery.🌙",
 "Life feels beautiful when moments shine like Deepavali lights.❤️",
 " Life becomes easier and happier with true friends around.💖",
 " If happiness had a selfie,it would look like this .💖",
-" Just a photo but the attitude is full HD.✨",
-" This face may Looks innocent but the hidden story is more intersting than you think.✨",
-" 💖 The gallery may end here but the memories continue forever But the story is still being written 💖.....💖"
-
+" Just a photo...but the attitude is full HD.✨",
+" This face may Looks innocent....but the hidden story is more intersting than you think.✨",
+" 💖 The gallery may end here...but the memories continue forever...But the story is still being written.....💖.....💖"
 ]
 
 let index=0
@@ -179,5 +178,6 @@ requestAnimationFrame(animate)
 }
 
 animate()
+
 
 
