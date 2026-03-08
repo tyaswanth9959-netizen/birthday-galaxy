@@ -17,7 +17,7 @@ flex-direction:column;
 /* TITLE */
 
 h1{
-font-size:60px;
+font-size:40px;
 color:#ff69b4;
 font-family:'Courier New',cursive;
 text-shadow:0 0 10px pink,0 0 20px rgb(151,86,119);
@@ -223,6 +223,7 @@ color:#FFD700;
 text-shadow:0 0 8px #FFD700,0 0 15px #FFD700,0 0 25px #ff69b4;
 font-weight:500;
 }
+
 
 
 
