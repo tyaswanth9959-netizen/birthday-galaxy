@@ -16,10 +16,17 @@ flex-direction:column;
 
 /* TITLE */
 
-h1{
+/*h1{
 font-size:40%;
 color:#ff69b4;
 font-family:'Courier New',cursive;
+text-shadow:0 0 10px pink,0 0 20px rgb(151,86,119);
+}
+*/
+
+h1{
+font-size:50px;
+color:#ff69b4;
 text-shadow:0 0 10px pink,0 0 20px rgb(151,86,119);
 }
 
@@ -181,12 +188,20 @@ text-shadow:0 0 8px #FFD700,0 0 15px #ff69b4;
 }
 
 /* FIRST PAGE MESSAGE */
-
+/*
 .birthdayMessage{
 margin-top:40px;
 text-align:center;
 font-size:26px;
 color:white;
+}
+*/
+.birthdayMessage{
+font-size:26px;
+color:#00ffff;
+text-shadow:0 0 8px cyan;
+max-width:90%;
+margin:auto;
 }
 
 /* TEXT GLOW + SLOW REVEAL */
@@ -226,17 +241,19 @@ font-weight:500;
 @media (max-width:600px){
 
 h1{
-font-size:50px;
+font-size:36px;
+line-height:1.2;
 }
 
 .birthdayMessage{
-font-size:26px;
-padding:0 15px;
+font-size:20px;
+padding:0 20px;
+line-height:1.6;
 }
 
 button{
-font-size:18px;
-padding:12px 24px;
+font-size:16px;
+padding:10px 20px;
 }
 
 }
