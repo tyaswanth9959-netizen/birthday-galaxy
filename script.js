@@ -104,12 +104,26 @@ document.getElementById("finishBtn").style.display="none"
 
 function nextPhoto(){
 
+let photo = document.getElementById("photo")
+let quote = document.getElementById("photoQuote")
+
+photo.classList.add("fadeOut")
+quote.classList.add("fadeOut")
+
+setTimeout(()=>{
+
 index++
 
 if(index<photos.length){
 
-document.getElementById("photo").src=photos[index]
-document.getElementById("photoQuote").innerText=quotes[index]
+photo.src = photos[index]
+quote.innerText = quotes[index]
+
+photo.classList.remove("fadeOut")
+quote.classList.remove("fadeOut")
+
+photo.classList.add("fadeIn")
+quote.classList.add("fadeIn")
 
 }else{
 
@@ -117,6 +131,8 @@ document.getElementById("nextBtn").style.display="none"
 document.getElementById("finishBtn").style.display="inline-block"
 
 }
+
+},500)
 
 }
 
@@ -178,6 +194,7 @@ requestAnimationFrame(animate)
 }
 
 animate()
+
 
 
 
