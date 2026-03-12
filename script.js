@@ -104,35 +104,32 @@ document.getElementById("finishBtn").style.display="none"
 
 function nextPhoto(){
 
-let photo = document.getElementById("photo")
-let quote = document.getElementById("photoQuote")
+let photo = document.getElementById("photo");
+let quote = document.getElementById("photoQuote");
 
-photo.classList.add("fadeOut")
-quote.classList.add("fadeOut")
+photo.style.opacity = "0";
+quote.style.opacity = "0";
 
 setTimeout(()=>{
 
-index++
+index++;
 
-if(index<photos.length){
+if(index < photos.length){
 
-photo.src = photos[index]
-quote.innerText = quotes[index]
+photo.src = photos[index];
+quote.innerText = quotes[index];
 
-photo.classList.remove("fadeOut")
-quote.classList.remove("fadeOut")
-
-photo.classList.add("fadeIn")
-quote.classList.add("fadeIn")
+photo.style.opacity = "1";
+quote.style.opacity = "1";
 
 }else{
 
-document.getElementById("nextBtn").style.display="none"
-document.getElementById("finishBtn").style.display="inline-block"
+document.getElementById("nextBtn").style.display="none";
+document.getElementById("finishBtn").style.display="inline-block";
 
 }
 
-},500)
+},400);
 
 }
 
@@ -194,6 +191,7 @@ requestAnimationFrame(animate)
 }
 
 animate()
+
 
 
 
