@@ -107,14 +107,14 @@ function nextPhoto(){
 let photo = document.getElementById("photo")
 let quote = document.getElementById("photoQuote")
 
+index++
+
+if(index < photos.length){
+
 photo.style.opacity="0"
 quote.style.opacity="0"
 
 setTimeout(()=>{
-
-index++
-
-if(index < photos.length){
 
 photo.src = photos[index]
 quote.innerText = quotes[index]
@@ -122,14 +122,14 @@ quote.innerText = quotes[index]
 photo.style.opacity="1"
 quote.style.opacity="1"
 
+},500)
+
 }else{
 
 document.getElementById("nextBtn").style.display="none"
 document.getElementById("finishBtn").style.display="inline-block"
 
 }
-
-},1000)
 
 }
 
@@ -191,6 +191,7 @@ requestAnimationFrame(animate)
 }
 
 animate()
+
 
 
 
