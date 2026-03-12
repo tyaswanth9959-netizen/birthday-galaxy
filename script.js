@@ -186,11 +186,27 @@ s.x=Math.random()*canvas.width
 
 })
 
+
+function sharePage(){
+
+navigator.share({
+title:"Birthday Galaxy",
+text:"Look at this beautiful birthday surprise!",
+url:window.location.href
+})
+
+}
+
+
+
+  
+
 requestAnimationFrame(animate)
 
 }
 
 animate()
+
 
 
 
